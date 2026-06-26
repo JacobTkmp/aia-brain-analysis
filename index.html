@@ -473,7 +473,55 @@ footer {
 
     <div class="brain-col">
       <div class="brain-wrap" style="padding:12px;">
-        <img src="brain_imgs/brain_1.png" style="width:100%;display:block;border-radius:12px;" alt="Brain activation map"/>
+        <svg viewBox="0 0 340 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;border-radius:12px;">
+  <defs>
+    <filter id="glow-ag" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.06  0 0 0 0 0.79  0 0 0 0 0.50  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-ifg" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.66  0 0 0 0 0.33  0 0 0 0 0.97  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-sts" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.31  0 0 0 0 0.56  0 0 0 0 1.00  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-acc" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.98  0 0 0 0 0.45  0 0 0 0 0.09  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-cs" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.92  0 0 0 0 0.70  0 0 0 0 0.03  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-stg" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.48  0 0 0 0 0.56  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="brain-clip-1">
+      <path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 C 158,10 188,10 214,22 C 240,34 258,58 268,86 C 278,110 278,138 270,160 C 260,184 242,200 218,210 C 198,218 174,220 152,216 C 128,212 106,202 88,188 C 68,172 46,162 45,145 Z"/>
+    </clipPath>
+  </defs>
+  <path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 C 158,10 188,10 214,22 C 240,34 258,58 268,86 C 278,110 278,138 270,160 C 260,184 242,200 218,210 C 198,218 174,220 152,216 C 128,212 106,202 88,188 C 68,172 46,162 45,145 Z" fill="#0f0f26"/><path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 L 178,22 L 170,108 L 96,110 C 88,110 80,124 72,140 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 178,22 C 198,15 222,22 240,42 L 244,56 L 238,110 L 228,110 L 170,108 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 244,56 L 258,72 C 274,98 276,132 268,158 L 255,178 C 242,196 228,172 228,142 L 230,118 L 238,110 L 244,56 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 96,110 L 170,108 L 228,110 L 230,118 L 228,142 C 228,172 242,196 255,178 L 248,192 C 236,210 216,218 190,220 L 162,218 L 134,213 L 108,202 L 84,188 L 68,170 L 66,152 L 72,140 C 80,124 88,110 96,110 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 96,110 L 170,108 L 228,110 L 228,128 L 168,128 L 96,125 Z" fill="#5090ff" fill-opacity="0.82" filter="url(#glow-sts)"/><path d="M 96,110 L 170,108 L 228,110 L 228,128 L 168,128 L 96,125 Z" fill="none" stroke="#5090ff" stroke-width="2.2" stroke-opacity="0.95"/><path d="M 96,125 L 168,128 L 228,128 L 226,140 L 233,145 L 228,148 L 165,148 L 96,142 Z" fill="#181832" stroke="#222244" stroke-width="0.8"/><path d="M 230,110 L 238,110 L 244,128 L 233,145 L 226,140 L 228,128 Z" fill="#10c980" fill-opacity="0.82" filter="url(#glow-ag)"/><path d="M 230,110 L 238,110 L 244,128 L 233,145 L 226,140 L 228,128 Z" fill="none" stroke="#10c980" stroke-width="2.2" stroke-opacity="0.95"/><path d="M 96,96 C 103,85 118,79 132,81 L 130,108 L 96,110 Z" fill="#a855f7" fill-opacity="0.82" filter="url(#glow-ifg)"/><path d="M 96,96 C 103,85 118,79 132,81 L 130,108 L 96,110 Z" fill="none" stroke="#a855f7" stroke-width="2.2" stroke-opacity="0.95"/><path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 C 158,10 188,10 214,22 C 240,34 258,58 268,86 C 278,110 278,138 270,160 C 260,184 242,200 218,210 C 198,218 174,220 152,216 C 128,212 106,202 88,188 C 68,172 46,162 45,145 Z" fill="none" stroke="#38386a" stroke-width="2"/><path d="M 178,22 C 176,55 174,82 170,108" fill="none" stroke="#1e1e42" stroke-width="1.8"/>
+    <path d="M 96,110 C 135,108 165,107 200,108 C 218,109 228,110 238,110" fill="none" stroke="#1e1e42" stroke-width="1.8"/>
+    <path d="M 244,56 C 242,80 240,96 238,110" fill="none" stroke="#1e1e42" stroke-width="1.4"/><text x="236" y="128" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="8.5" font-weight="700" fill="#10c980" letter-spacing="0.06em" opacity="0.95">AG</text><text x="158" y="100" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="8.5" font-weight="700" fill="#5090ff" letter-spacing="0.06em" opacity="0.95">STS</text><text x="110" y="90" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="8.5" font-weight="700" fill="#a855f7" letter-spacing="0.06em" opacity="0.95">IFG</text>
+    <g transform="translate(228, 8)">
+      <rect x="0" y="0" width="106" height="74" rx="8" fill="#0b0b1e" stroke="#2a2a50" stroke-width="1"/>
+      <text x="53" y="11" text-anchor="middle" font-family="system-ui,sans-serif" font-size="6.5" fill="rgba(140,140,200,0.5)" letter-spacing="0.08em">MEDIAL</text>
+      <path d="M 8,60 C 8,42 14,28 26,20 C 36,14 50,12 62,15 C 74,18 84,28 90,42 C 94,52 90,62 82,66 L 54,68 L 22,66 Z" fill="#14142a" stroke="#242448" stroke-width="1"/>
+      <path d="M 22,28 C 28,22 40,20 50,22 L 48,38 C 40,36 30,36 24,40 Z" fill="#f97316" fill-opacity="0.85" filter="url(#glow-acc)"/><path d="M 22,28 C 28,22 40,20 50,22 L 48,38 C 40,36 30,36 24,40 Z" fill="none" stroke="#f97316" stroke-width="1.4"/>
+      <path d="M 50,22 C 62,22 72,28 76,38 L 62,42 C 58,36 52,34 48,38 L 50,22 Z" fill="#181832" stroke="#242448" stroke-width="0.8"/>
+      <text x="35" y="48" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" font-weight="700" fill="#f97316" opacity="0.9">ACC</text>
+      
+    </g>
+</svg>
         <p class="brain-label">Lateral view — TRIBE v2 neural activation</p>
       </div>
     </div>
@@ -529,7 +577,55 @@ footer {
 
     <div class="brain-col">
       <div class="brain-wrap" style="padding:12px;">
-        <img src="brain_imgs/brain_2.png" style="width:100%;display:block;border-radius:12px;" alt="Brain activation map"/>
+        <svg viewBox="0 0 340 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;border-radius:12px;">
+  <defs>
+    <filter id="glow-ag" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.06  0 0 0 0 0.79  0 0 0 0 0.50  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-ifg" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.66  0 0 0 0 0.33  0 0 0 0 0.97  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-sts" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.31  0 0 0 0 0.56  0 0 0 0 1.00  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-acc" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.98  0 0 0 0 0.45  0 0 0 0 0.09  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-cs" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.92  0 0 0 0 0.70  0 0 0 0 0.03  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-stg" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.48  0 0 0 0 0.56  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="brain-clip-2">
+      <path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 C 158,10 188,10 214,22 C 240,34 258,58 268,86 C 278,110 278,138 270,160 C 260,184 242,200 218,210 C 198,218 174,220 152,216 C 128,212 106,202 88,188 C 68,172 46,162 45,145 Z"/>
+    </clipPath>
+  </defs>
+  <path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 C 158,10 188,10 214,22 C 240,34 258,58 268,86 C 278,110 278,138 270,160 C 260,184 242,200 218,210 C 198,218 174,220 152,216 C 128,212 106,202 88,188 C 68,172 46,162 45,145 Z" fill="#0f0f26"/><path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 L 178,22 L 170,108 L 96,110 C 88,110 80,124 72,140 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 178,22 C 198,15 222,22 240,42 L 244,56 L 238,110 L 228,110 L 170,108 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 244,56 L 258,72 C 274,98 276,132 268,158 L 255,178 C 242,196 228,172 228,142 L 230,118 L 238,110 L 244,56 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 96,110 L 170,108 L 228,110 L 230,118 L 228,142 C 228,172 242,196 255,178 L 248,192 C 236,210 216,218 190,220 L 162,218 L 134,213 L 108,202 L 84,188 L 68,170 L 66,152 L 72,140 C 80,124 88,110 96,110 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 96,110 L 170,108 L 228,110 L 228,128 L 168,128 L 96,125 Z" fill="#5090ff" fill-opacity="0.82" filter="url(#glow-sts)"/><path d="M 96,110 L 170,108 L 228,110 L 228,128 L 168,128 L 96,125 Z" fill="none" stroke="#5090ff" stroke-width="2.2" stroke-opacity="0.95"/><path d="M 96,125 L 168,128 L 228,128 L 226,140 L 233,145 L 228,148 L 165,148 L 96,142 Z" fill="#181832" stroke="#222244" stroke-width="0.8"/><path d="M 230,110 L 238,110 L 244,128 L 233,145 L 226,140 L 228,128 Z" fill="#10c980" fill-opacity="0.28"/><path d="M 230,110 L 238,110 L 244,128 L 233,145 L 226,140 L 228,128 Z" fill="none" stroke="#10c980" stroke-width="1.2" stroke-opacity="0.45"/><path d="M 96,96 C 103,85 118,79 132,81 L 130,108 L 96,110 Z" fill="#a855f7" fill-opacity="0.82" filter="url(#glow-ifg)"/><path d="M 96,96 C 103,85 118,79 132,81 L 130,108 L 96,110 Z" fill="none" stroke="#a855f7" stroke-width="2.2" stroke-opacity="0.95"/><path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 C 158,10 188,10 214,22 C 240,34 258,58 268,86 C 278,110 278,138 270,160 C 260,184 242,200 218,210 C 198,218 174,220 152,216 C 128,212 106,202 88,188 C 68,172 46,162 45,145 Z" fill="none" stroke="#38386a" stroke-width="2"/><path d="M 178,22 C 176,55 174,82 170,108" fill="none" stroke="#1e1e42" stroke-width="1.8"/>
+    <path d="M 96,110 C 135,108 165,107 200,108 C 218,109 228,110 238,110" fill="none" stroke="#1e1e42" stroke-width="1.8"/>
+    <path d="M 244,56 C 242,80 240,96 238,110" fill="none" stroke="#1e1e42" stroke-width="1.4"/><text x="158" y="100" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="8.5" font-weight="700" fill="#5090ff" letter-spacing="0.06em" opacity="0.95">STS</text><text x="110" y="90" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="8.5" font-weight="700" fill="#a855f7" letter-spacing="0.06em" opacity="0.95">IFG</text>
+    <g transform="translate(228, 8)">
+      <rect x="0" y="0" width="106" height="74" rx="8" fill="#0b0b1e" stroke="#2a2a50" stroke-width="1"/>
+      <text x="53" y="11" text-anchor="middle" font-family="system-ui,sans-serif" font-size="6.5" fill="rgba(140,140,200,0.5)" letter-spacing="0.08em">MEDIAL</text>
+      <path d="M 8,60 C 8,42 14,28 26,20 C 36,14 50,12 62,15 C 74,18 84,28 90,42 C 94,52 90,62 82,66 L 54,68 L 22,66 Z" fill="#14142a" stroke="#242448" stroke-width="1"/>
+      <path d="M 22,28 C 28,22 40,20 50,22 L 48,38 C 40,36 30,36 24,40 Z" fill="#181832" stroke="#242448" stroke-width="0.8"/>
+      <path d="M 50,22 C 62,22 72,28 76,38 L 62,42 C 58,36 52,34 48,38 L 50,22 Z" fill="#181832" stroke="#242448" stroke-width="0.8"/>
+      
+      
+    </g>
+</svg>
         <p class="brain-label">Lateral view — TRIBE v2 neural activation</p>
       </div>
     </div>
@@ -585,7 +681,55 @@ footer {
 
     <div class="brain-col">
       <div class="brain-wrap" style="padding:12px;">
-        <img src="brain_imgs/brain_3.png" style="width:100%;display:block;border-radius:12px;" alt="Brain activation map"/>
+        <svg viewBox="0 0 340 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;border-radius:12px;">
+  <defs>
+    <filter id="glow-ag" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.06  0 0 0 0 0.79  0 0 0 0 0.50  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-ifg" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.66  0 0 0 0 0.33  0 0 0 0 0.97  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-sts" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.31  0 0 0 0 0.56  0 0 0 0 1.00  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-acc" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.98  0 0 0 0 0.45  0 0 0 0 0.09  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-cs" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.92  0 0 0 0 0.70  0 0 0 0 0.03  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-stg" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.48  0 0 0 0 0.56  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="brain-clip-3">
+      <path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 C 158,10 188,10 214,22 C 240,34 258,58 268,86 C 278,110 278,138 270,160 C 260,184 242,200 218,210 C 198,218 174,220 152,216 C 128,212 106,202 88,188 C 68,172 46,162 45,145 Z"/>
+    </clipPath>
+  </defs>
+  <path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 C 158,10 188,10 214,22 C 240,34 258,58 268,86 C 278,110 278,138 270,160 C 260,184 242,200 218,210 C 198,218 174,220 152,216 C 128,212 106,202 88,188 C 68,172 46,162 45,145 Z" fill="#0f0f26"/><path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 L 178,22 L 170,108 L 96,110 C 88,110 80,124 72,140 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 178,22 C 198,15 222,22 240,42 L 244,56 L 238,110 L 228,110 L 170,108 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 244,56 L 258,72 C 274,98 276,132 268,158 L 255,178 C 242,196 228,172 228,142 L 230,118 L 238,110 L 244,56 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 96,110 L 170,108 L 228,110 L 230,118 L 228,142 C 228,172 242,196 255,178 L 248,192 C 236,210 216,218 190,220 L 162,218 L 134,213 L 108,202 L 84,188 L 68,170 L 66,152 L 72,140 C 80,124 88,110 96,110 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 96,110 L 170,108 L 228,110 L 228,128 L 168,128 L 96,125 Z" fill="#5090ff" fill-opacity="0.28"/><path d="M 96,110 L 170,108 L 228,110 L 228,128 L 168,128 L 96,125 Z" fill="none" stroke="#5090ff" stroke-width="1.2" stroke-opacity="0.45"/><path d="M 96,125 L 168,128 L 228,128 L 226,140 L 233,145 L 228,148 L 165,148 L 96,142 Z" fill="#181832" stroke="#222244" stroke-width="0.8"/><path d="M 230,110 L 238,110 L 244,128 L 233,145 L 226,140 L 228,128 Z" fill="#181832" stroke="#222244" stroke-width="0.8"/><path d="M 96,96 C 103,85 118,79 132,81 L 130,108 L 96,110 Z" fill="#181832" stroke="#222244" stroke-width="0.8"/><path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 C 158,10 188,10 214,22 C 240,34 258,58 268,86 C 278,110 278,138 270,160 C 260,184 242,200 218,210 C 198,218 174,220 152,216 C 128,212 106,202 88,188 C 68,172 46,162 45,145 Z" fill="none" stroke="#38386a" stroke-width="2"/><path d="M 178,22 C 176,55 174,82 170,108" fill="none" stroke="#1e1e42" stroke-width="1.8"/>
+    <path d="M 96,110 C 135,108 165,107 200,108 C 218,109 228,110 238,110" fill="none" stroke="#1e1e42" stroke-width="1.8"/>
+    <path d="M 244,56 C 242,80 240,96 238,110" fill="none" stroke="#1e1e42" stroke-width="1.4"/>
+    <g transform="translate(228, 8)">
+      <rect x="0" y="0" width="106" height="74" rx="8" fill="#0b0b1e" stroke="#2a2a50" stroke-width="1"/>
+      <text x="53" y="11" text-anchor="middle" font-family="system-ui,sans-serif" font-size="6.5" fill="rgba(140,140,200,0.5)" letter-spacing="0.08em">MEDIAL</text>
+      <path d="M 8,60 C 8,42 14,28 26,20 C 36,14 50,12 62,15 C 74,18 84,28 90,42 C 94,52 90,62 82,66 L 54,68 L 22,66 Z" fill="#14142a" stroke="#242448" stroke-width="1"/>
+      <path d="M 22,28 C 28,22 40,20 50,22 L 48,38 C 40,36 30,36 24,40 Z" fill="#f97316" fill-opacity="0.85" filter="url(#glow-acc)"/><path d="M 22,28 C 28,22 40,20 50,22 L 48,38 C 40,36 30,36 24,40 Z" fill="none" stroke="#f97316" stroke-width="1.4"/>
+      <path d="M 50,22 C 62,22 72,28 76,38 L 62,42 C 58,36 52,34 48,38 L 50,22 Z" fill="#eab308" fill-opacity="0.85" filter="url(#glow-cs)"/><path d="M 50,22 C 62,22 72,28 76,38 L 62,42 C 58,36 52,34 48,38 L 50,22 Z" fill="none" stroke="#eab308" stroke-width="1.4"/>
+      <text x="35" y="48" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" font-weight="700" fill="#f97316" opacity="0.9">ACC</text>
+      <text x="62" y="48" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7" font-weight="700" fill="#eab308" opacity="0.9">CS</text>
+    </g>
+</svg>
         <p class="brain-label">Lateral view — TRIBE v2 neural activation</p>
       </div>
     </div>
@@ -641,7 +785,55 @@ footer {
 
     <div class="brain-col">
       <div class="brain-wrap" style="padding:12px;">
-        <img src="brain_imgs/brain_4.png" style="width:100%;display:block;border-radius:12px;" alt="Brain activation map"/>
+        <svg viewBox="0 0 340 250" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;border-radius:12px;">
+  <defs>
+    <filter id="glow-ag" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.06  0 0 0 0 0.79  0 0 0 0 0.50  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-ifg" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.66  0 0 0 0 0.33  0 0 0 0 0.97  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-sts" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.31  0 0 0 0 0.56  0 0 0 0 1.00  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-acc" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.98  0 0 0 0 0.45  0 0 0 0 0.09  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-cs" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.92  0 0 0 0 0.70  0 0 0 0 0.03  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-stg" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.48  0 0 0 0 0.56  0 0 0 0.65 0" result="colored"/>
+      <feMerge><feMergeNode in="colored"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="brain-clip-4">
+      <path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 C 158,10 188,10 214,22 C 240,34 258,58 268,86 C 278,110 278,138 270,160 C 260,184 242,200 218,210 C 198,218 174,220 152,216 C 128,212 106,202 88,188 C 68,172 46,162 45,145 Z"/>
+    </clipPath>
+  </defs>
+  <path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 C 158,10 188,10 214,22 C 240,34 258,58 268,86 C 278,110 278,138 270,160 C 260,184 242,200 218,210 C 198,218 174,220 152,216 C 128,212 106,202 88,188 C 68,172 46,162 45,145 Z" fill="#0f0f26"/><path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 L 178,22 L 170,108 L 96,110 C 88,110 80,124 72,140 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 178,22 C 198,15 222,22 240,42 L 244,56 L 238,110 L 228,110 L 170,108 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 244,56 L 258,72 C 274,98 276,132 268,158 L 255,178 C 242,196 228,172 228,142 L 230,118 L 238,110 L 244,56 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 96,110 L 170,108 L 228,110 L 230,118 L 228,142 C 228,172 242,196 255,178 L 248,192 C 236,210 216,218 190,220 L 162,218 L 134,213 L 108,202 L 84,188 L 68,170 L 66,152 L 72,140 C 80,124 88,110 96,110 Z" fill="#14142e" stroke="#242448" stroke-width="1.2"/><path d="M 96,110 L 170,108 L 228,110 L 228,128 L 168,128 L 96,125 Z" fill="#181832" stroke="#222244" stroke-width="0.8"/><path d="M 96,125 L 168,128 L 228,128 L 226,140 L 233,145 L 228,148 L 165,148 L 96,142 Z" fill="#6b7a90" fill-opacity="0.82" filter="url(#glow-stg)"/><path d="M 96,125 L 168,128 L 228,128 L 226,140 L 233,145 L 228,148 L 165,148 L 96,142 Z" fill="none" stroke="#6b7a90" stroke-width="2.2" stroke-opacity="0.95"/><path d="M 230,110 L 238,110 L 244,128 L 233,145 L 226,140 L 228,128 Z" fill="#181832" stroke="#222244" stroke-width="0.8"/><path d="M 96,96 C 103,85 118,79 132,81 L 130,108 L 96,110 Z" fill="#181832" stroke="#222244" stroke-width="0.8"/><path d="M 45,145 C 43,115 48,85 62,63 C 76,42 100,26 130,18 C 158,10 188,10 214,22 C 240,34 258,58 268,86 C 278,110 278,138 270,160 C 260,184 242,200 218,210 C 198,218 174,220 152,216 C 128,212 106,202 88,188 C 68,172 46,162 45,145 Z" fill="none" stroke="#38386a" stroke-width="2"/><path d="M 178,22 C 176,55 174,82 170,108" fill="none" stroke="#1e1e42" stroke-width="1.8"/>
+    <path d="M 96,110 C 135,108 165,107 200,108 C 218,109 228,110 238,110" fill="none" stroke="#1e1e42" stroke-width="1.8"/>
+    <path d="M 244,56 C 242,80 240,96 238,110" fill="none" stroke="#1e1e42" stroke-width="1.4"/><text x="158" y="138" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="8.5" font-weight="700" fill="#6b7a90" letter-spacing="0.06em" opacity="0.95">STG</text>
+    <g transform="translate(228, 8)">
+      <rect x="0" y="0" width="106" height="74" rx="8" fill="#0b0b1e" stroke="#2a2a50" stroke-width="1"/>
+      <text x="53" y="11" text-anchor="middle" font-family="system-ui,sans-serif" font-size="6.5" fill="rgba(140,140,200,0.5)" letter-spacing="0.08em">MEDIAL</text>
+      <path d="M 8,60 C 8,42 14,28 26,20 C 36,14 50,12 62,15 C 74,18 84,28 90,42 C 94,52 90,62 82,66 L 54,68 L 22,66 Z" fill="#14142a" stroke="#242448" stroke-width="1"/>
+      <path d="M 22,28 C 28,22 40,20 50,22 L 48,38 C 40,36 30,36 24,40 Z" fill="#181832" stroke="#242448" stroke-width="0.8"/>
+      <path d="M 50,22 C 62,22 72,28 76,38 L 62,42 C 58,36 52,34 48,38 L 50,22 Z" fill="#181832" stroke="#242448" stroke-width="0.8"/>
+      
+      
+    </g>
+</svg>
         <p class="brain-label">Lateral view — TRIBE v2 neural activation</p>
       </div>
     </div>
